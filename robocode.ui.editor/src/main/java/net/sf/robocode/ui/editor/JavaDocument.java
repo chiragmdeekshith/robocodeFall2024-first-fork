@@ -59,7 +59,7 @@ public class JavaDocument extends StyledDocument {
 	private boolean isAutoIndentEnabled = true;
 
 	/** Flag defining if spaces must be used for indentation; otherwise tabulation characters are being used */
-	private final boolean useSpacesForIndentation = false;
+	private static final boolean useSpacesForIndentation = false;
 
 	/** Tab size (column width) */
 	private int tabSize = 4; // Default is every 4th column
@@ -68,7 +68,7 @@ public class JavaDocument extends StyledDocument {
 	private static final String QUOTE_DELIMITERS = "\"'";
 
 	/** Java keywords */
-	private static final Set<String> KEYWORDS = new HashSet<String>(
+	private static final Set<String> KEYWORDS = new HashSet<>(
 			Arrays.asList(
 					"abstract", "assert", "boolean", "break", "byte", "case", "catch", "char", "class", "const", "continue",
 					"default", "do", "double", "else", "enum", "extends", "final", "finally", "float", "for", "goto", "if",
